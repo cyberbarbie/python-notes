@@ -147,4 +147,37 @@ winter_trees_lines = ['All the complicated details', 'of the attiring and', 'the
 
 new_paragraph = '\n'.join(winter_trees_lines)
 
-print(new_paragraph)
+#print(new_paragraph)
+
+# .strip()- method removes all trailing whitespace in beginning and end but preserves the middle
+
+dirty_string = "     What are you doing    right now  "
+
+clean_string = dirty_string.strip()
+
+#print(clean_string)
+
+# .strip('argument')- remove all instances of a specified argument in a string
+# removes specified argument from the BEGINNING and END of a string
+usernames = "@hello_goodbye cyberbarbie dsfsdfdsfds@"
+
+just_usernames = usernames.strip('@')
+
+# print(just_usernames)
+
+# create a list of strings that contain lots of whitespace
+
+love_maybe_lines = ['Always    ', '     in the middle of our bloodiest battles  ', 'you lay down your arms', '           like flowering mines    ','\n' ,'   to conquer me home.    ']
+
+# create a new list 
+love_maybe_lines_stripped = []
+
+# loop through each string in the list to strip the whitespace
+# add each new string that doesnt contain the whitespace to the empty list
+for line in love_maybe_lines:
+  love_maybe_lines_stripped.append(line.strip())
+
+# add a line break between each string
+love_maybe_full = '\n'.join(love_maybe_lines_stripped)
+
+print(love_maybe_full)
