@@ -180,4 +180,40 @@ for line in love_maybe_lines:
 # add a line break between each string
 love_maybe_full = '\n'.join(love_maybe_lines_stripped)
 
-print(love_maybe_full)
+# print(love_maybe_full)
+
+# .replace() - takes 2 arguments: what we want to replace and what we want to replace it with
+
+dummy_string = "Lorem ipsum cupcake lorem lorem"
+
+replace_lorem = dummy_string.replace("lorem", "hello")
+
+# print(replace_lorem)
+
+# another example of replace()
+
+my_greeting = "Hello my name is Tae'lur"
+
+replace_name = my_greeting.replace("Tae'lur", "Cyberbarbie")
+
+# print(replace_name)
+
+# use .replace() to replace every instance of a whitespace with a comma
+with_spaces = "red blue white pink purple red"
+
+with_commas = with_spaces.replace(" ", ", ")
+
+# print(with_commas)
+
+toomer_bio = \
+"""
+Nathan Pinchback Tomer, who adopted the name Jean Tomer early in his literary career, was born in Washington, D.C. in 1894. Jean is the son of Nathan Tomer was a mixed-race freedman, born into slavery in 1839 in Chatham County, North Carolina. Jean Tomer is most well known for his first book Cane, which vividly portrays the life of African-Americans in southern farmlands.
+"""
+
+# replace all instances of "Tomer" in the string to "Toomer" 
+
+toomer_bio_fixed = toomer_bio.replace("Tomer", "Toomer")
+
+print(toomer_bio_fixed)
+
+
