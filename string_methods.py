@@ -214,6 +214,21 @@ Nathan Pinchback Tomer, who adopted the name Jean Tomer early in his literary ca
 
 toomer_bio_fixed = toomer_bio.replace("Tomer", "Toomer")
 
-print(toomer_bio_fixed)
+# print(toomer_bio_fixed)
 
+# .find()- takes an argument and finds and returns the first index value of where it occurs in the string
 
+twitch_username = "Cyberbarbie"
+
+# find and return the index position of the first instance of the specified argument
+# aka give me the first index position of the letter "b" in cyberbarbie
+find_the_first_b = twitch_name.find("b")
+
+# returns the value [2]
+# print(find_the_first_b)
+
+god_wills_it_line_one = "The very earth will disown you"
+
+disown_placement = god_wills_it_line_one.find("disown")
+
+print(disown_placement)
