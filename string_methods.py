@@ -32,6 +32,20 @@ line_one_words = line_one.split()
 
 #print(line_one_words)
 
+favorite_food = "My favorite food will always be enchiladas."
+
+split_food = favorite_food.split()
+
+#print(split_food)
+
+favorite_quote = "The          flower that blooms in adversity is the most rare and beautiful of all"
+
+break_down = favorite_quote.split()
+
+#print(break_down)
+
+# split() will turn every word in the string into its own element in a list
+
 greatest_guitarist = "santana"
 # save the method to a new variable because strings are immutable
 # every encounter of that specified character/substring start a new index
@@ -62,7 +76,7 @@ author_last_names = []
 for name in author_names:
     author_last_names.append(name.split()[-1])
 
-#print(author_last_names)
+# print(author_last_names)
 
 # Escape sequences- another way to escape/split a string
 # \n newline- create a line break
@@ -78,7 +92,7 @@ Because you're so smooth"""
 
 chorus_lines = smooth_chorus.split('\n')
 
-#print(chorus_lines)
+# print(chorus_lines)
 
 spring_storm_text = \
 """The sky has given over 
@@ -107,5 +121,30 @@ reapers_line_one_words = ["Black", "reapers", "with", "the", "sound", "of", "ste
 
 reapers_line_one = ' '.join(reapers_line_one_words)
 
-print(reapers_line_one)
+#print(reapers_line_one)
 
+# example of .join()
+# add a white space between each element in a list
+
+quote = ["I", "like", "to", "sleep", "all", "the", "time"]
+
+combined_quote = " ".join(quote)
+
+#print(combined_quote)
+
+# comma separated variables - join strings with a comma
+
+favorite_places = ["San Diego", "Toronto", "San Francisco", "Amsterdam"]
+
+# create a common and a whitespace between each string in a list
+favorite_places_csv = ', '.join(favorite_places)
+
+#print(favorite_places_csv) 
+
+# .join()- to combine list of strings and create a new line break between each
+
+winter_trees_lines = ['All the complicated details', 'of the attiring and', 'the disattiring are completed!', 'A liquid moon', 'moves gently among', 'the long branches.', 'Thus having prepared their buds', 'against a sure winter', 'the wise trees', 'stand sleeping in the cold.']
+
+new_paragraph = '\n'.join(winter_trees_lines)
+
+print(new_paragraph)
