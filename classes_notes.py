@@ -1,12 +1,18 @@
+# creates a class called UserInfo (parent object)
 class UserInfo:
+    # create 3 class variables that we will use in the method
     name = "CyberBarbie"
     age = 23
     occupation = "content creator and whatever else they pay me to do"
-
+    
+    # create a method that takes in a an argument called self
     def bio(self):
+        # self is a reference to the calling instance
         print(f"Hello my name is {self.name} and I am {self.age} years old. I work as a {self.occupation}")
 
+# create an instance of that class (creates its own object in memory)
 another_inst = UserInfo()
+# call the method on that particular instance
 another_inst.bio()
 
 another_attempt = UserInfo()
@@ -34,7 +40,7 @@ class DistanceConverter:
 
 # creates an instance of a class and sets it to the variable name "converter"
 converter = DistanceConverter()
-# explicitly pass in the miles argument
+# explicitly pass in the miles argument which in this case is 5(int)
 kms_in_5_miles = converter.how_many_kms(5)
 print(kms_in_5_miles)
 
